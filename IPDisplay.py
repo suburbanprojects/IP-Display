@@ -9,7 +9,7 @@ def localip():
     return localIP
 
 def publicip():
-    external_ip = urllib.request.urlopen('https://ident.me').read().decode('utf8')
+    external_ip = urllib.request.urlopen('http://myip.dnsomatic.com').read().decode('utf8')
     return external_ip
 
 f = Figlet(font='cybermedium')
