@@ -14,7 +14,7 @@ def showIP():
     EntryHomeIP.insert(tk.INSERT, localIP)
     EntryHomeIP.config(state='disabled')
 
-    publicip= urllib.request.urlopen('https://v4.ident.me/').read().decode('utf8')
+    publicip= urllib.request.urlopen('http://myip.dnsomatic.com').read().decode('utf8')
     EntryExtIP.insert(tk.INSERT, publicip)
     EntryExtIP.config(state='disabled')
 
