@@ -5,7 +5,7 @@ import pyperclip
 
 app =tk.Tk()
 app.title("IP Display")
-app.geometry("350x150")
+app.geometry("350x125")
 
 def showIP():
 
@@ -36,12 +36,12 @@ EntryHomeIP.grid(column=1,row=0,padx=10,pady=5, sticky=tk.N)
 EntryExtIP.grid(column=1,row=1,padx=10,pady=5, sticky=tk.S)
 
 resultButton = tk.Button(app, text='Show IP', command=showIP)
-resultButton.grid(column=0, row=4, pady=10, sticky=tk.W)
+resultButton.grid(column=0, row=4) 
 resultCopy1 = tk.Button(app, text='Copy', command=CopyPass1)
-resultCopy1.grid(column=2, row=0, pady=10, sticky=tk.W)
+resultCopy1.grid(column=3, row=0) 
 resultCopy2= tk.Button(app, text='Copy', command=CopyPass2)
-resultCopy2.grid(column=2, row=1, pady=10, sticky=tk.W)
+resultCopy2.grid(column=3, row=1) 
 resultQuit = tk.Button(app, text='Quit', command=app.quit)
-resultQuit.grid(column=2, row=4, pady=10, sticky=tk.W)
+resultQuit.grid(column=3, row=4) 
 
 app.mainloop()
